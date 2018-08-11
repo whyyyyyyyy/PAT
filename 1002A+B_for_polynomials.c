@@ -47,6 +47,7 @@ int main (int argc,char *argv[])
 		 //一开始只是if 不是else if 
 		 //问题是 当第一项大的时候 第一次比较p3不会存数据 而是从第二次才开始存 
 		 //测试点一一直出错 修改后测试过了 虽然有点不理解。。。 
+		 //追加：原来是判断不平行 else会在P1大于P2时再次赋值 因此报错 淦 原来这么弱智 
 		{
 		 sumP3[K3].exp=P2[j].exp;
 		 sumP3[K3].coef=P2[j].coef;
